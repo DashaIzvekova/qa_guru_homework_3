@@ -1,8 +1,7 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+
 
 @pytest.fixture
 def driver():
@@ -21,6 +20,7 @@ def test_google_web(driver):
     driver.get(url)
     assert driver.title == "Google"
     assert driver.current_url == url
+
 
 def test_github_web(driver):
     url = "https://github.com/"

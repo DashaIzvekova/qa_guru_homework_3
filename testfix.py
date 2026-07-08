@@ -7,12 +7,12 @@ Text = ("Lorem Ipsum - это текст-'рыба', часто использу
 
 
 def add(a, b):
-        return a + b
-
+    return a + b
 
 
 def greet(name):
     print("Привет," + name)
+
 
 print("Hello, README!")
 NUMS = [1, 2, 3, 4, 5]
